@@ -10,6 +10,7 @@
 body {
     font-family: 'Montserrat', Arial, Helvetica, sans-serif;
     line-height: 1.6;
+    overflow-x: hidden;
     background-color: var(--cor-primaria);
     padding-top: 60px;
 }
@@ -200,7 +201,7 @@ header {
 .hero-conteudo-one img {
     border-radius: 10px;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-    width: 60%;
+    width: 70%;
     max-height: 600px;
     object-fit: cover;
     margin: 0 auto;
@@ -415,7 +416,7 @@ header {
 
 .faq {
     background-image: var(--linear-gradient);
-    padding: 10rem 2rem;
+    padding: 3rem 2rem;
     color: var(--cor-primaria);
 
 }
@@ -509,7 +510,7 @@ footer p {
 
     .menu-toggle {
         display: flex;
-        padding: 1.5rem;
+        padding: 1.8rem;
     }
 
     .nav-Links {
@@ -571,7 +572,10 @@ footer p {
             width: 300px;
         }
     }
+<<<<<<< HEAD
 
+=======
+>>>>>>> ba232242a8593239c9e0ed1d47255239a70d9c44
     .localizacao h2 {
         font-size: 1.5rem;
     }
@@ -583,7 +587,11 @@ footer p {
     .mapa {
         iframe {
             width: 300px;
+<<<<<<< HEAD
             width: 300px;
+=======
+            height: 300px;
+>>>>>>> ba232242a8593239c9e0ed1d47255239a70d9c44
             margin: 0 auto;
         }
     }
