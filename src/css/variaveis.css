@@ -1,8 +1,29 @@
 :root {
-    --cor-primaria: #fff;
-    --cor-text-a: #fff;
-    --cor-text-b:#226127;
+    /* Modo Claro */
+    --cor-primaria: #ffffff;
+    --cor-text-a: #226127;
+    --cor-text-b: #ffffff;
     --cor-secundaria: #6AB010;
-    --linear-gradient: linear-gradient(180deg,rgba(106, 176, 16, 1) 0%, rgba(34, 97, 39, 1) 100%);
-    --cor-text-c: rgb(130, 255, 151);
+    --cor-text-c: #82ff97;
+
+    --linear-gradient: linear-gradient(
+        180deg,
+        #6AB010 0%,
+        #226127 100%
+    );
+}
+
+.dark-mode {
+    /* Modo Escuro */
+    --cor-primaria: #121212;
+    --cor-text-a: #ffffff;
+    --cor-text-b: #6AB010;
+    --cor-secundaria: #7dce13;
+    --cor-text-c: #82ff97;
+
+    --linear-gradient: linear-gradient(
+        180deg,
+        #1b5e20 0%,
+        #0d3b12 100%
+    );
 }

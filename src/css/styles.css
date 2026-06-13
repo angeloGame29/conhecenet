@@ -38,8 +38,18 @@ html {
     font-weight: 600;
     cursor: pointer;
     transition: 0.3s;
-    border: 2px #ffffff solid;
+    border: 1px #ffffff solid;
 
+}
+
+#theme-toggle {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    background: transparent;
+    color: var(--cor-primaria);
+    font-weight: bold;
 }
 
 .btn:hover {
@@ -100,6 +110,7 @@ header {
 .nav-Links {
     display: flex;
     gap: 2rem;
+    color: var(--cor-text-a);
 }
 
 .nav-Links a {
@@ -177,7 +188,7 @@ header {
     background-image: var(--cor-primaria);
     padding: 3rem 2rem;
     gap: 15px;
-    color: var(--cor-text-b);
+    color: var(--cor-text-a);
 }
 
 .hero-conteudo-one {
@@ -211,7 +222,7 @@ header {
     background-image: var(--linear-gradient);
     padding: 3rem 2rem;
     gap: 15px;
-    color: var(--cor-text-a);
+    color: var(--cor-text-b);
 
     h2 {
         line-height: 1;
@@ -223,6 +234,7 @@ header {
     p {
         text-align: center;
         margin-bottom: 1rem;
+        color: var(--cor-primaria);
 
     }
 }
@@ -273,12 +285,13 @@ header {
 .sobre h2 {
     font-size: 2.5rem;
     margin-bottom: 1rem;
-    color: var(--cor-text-b);
+    color: var(--cor-text-a);
 }
 
 .sobre p {
     font-size: 1.1rem;
     max-width: 800px;
+    color: var(--cor-text-a);
 }
 
 .sobre strong {
@@ -313,7 +326,7 @@ header {
     background-image: var(--linear-gradient);
     padding: 3rem 2rem;
     text-align: center;
-    color: var(--cor-primaria);
+    color: var(--cor-text-b);
     height: auto;
 }
 
@@ -328,6 +341,7 @@ header {
     max-width: 800px;
     margin: 0 auto;
     margin-bottom: 1rem;
+    color: var(--cor-primaria);
 }
 
 .servicos-grids {
@@ -399,11 +413,12 @@ header {
 
 .contato h2 {
     font-size: 2.5rem;
-    color: var(--cor-text-b);
+    color: var(--cor-text-a);
 }
 
 .contato p {
     font-size: 1.5rem;
+    color: var(--cor-text-a);
 }
 
 .btn-outline {
@@ -426,11 +441,13 @@ header {
     font-size: 2rem;
     margin-bottom: 1rem;
     text-align: center;
+    color: var(--cor-text-b);
 }
 
 .faq p {
     text-align: center;
     margin-bottom: 1rem;
+    color: var(--cor-primaria);
 }
 
 .faq-item {
@@ -441,7 +458,7 @@ header {
     width: 100%;
     background: none;
     border: none;
-    color: var(--cor-primaria);
+    color: var(--cor-text-b);
     font-size: 1.1rem;
     font-weight: 600;
     text-align: left;
@@ -477,7 +494,7 @@ header {
 }
 
 footer {
-    background-color: #ffffff;
+    background-color: var(--cor-primaria);
     padding: 2rem 1rem;
     display: flex;
     flex-direction: column;
@@ -493,6 +510,7 @@ footer h2 {
 
 footer p {
     font-size: 15px;
+    color: var(--cor-text-a);
 }
 
 @media (max-width: 480px) {
@@ -572,10 +590,6 @@ footer p {
             width: 300px;
         }
     }
-<<<<<<< HEAD
-
-=======
->>>>>>> ba232242a8593239c9e0ed1d47255239a70d9c44
     .localizacao h2 {
         font-size: 1.5rem;
     }
@@ -587,11 +601,7 @@ footer p {
     .mapa {
         iframe {
             width: 300px;
-<<<<<<< HEAD
             width: 300px;
-=======
-            height: 300px;
->>>>>>> ba232242a8593239c9e0ed1d47255239a70d9c44
             margin: 0 auto;
         }
     }
