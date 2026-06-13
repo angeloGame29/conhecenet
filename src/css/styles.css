@@ -571,6 +571,13 @@ footer p {
             width: 400px;
         }
     }
+    .localizacao h2 {
+        font-size: 1.5rem;
+    }
+
+    .localizacao p {
+        font-size: 1rem;
+    }
 
     .mapa {
         iframe {
