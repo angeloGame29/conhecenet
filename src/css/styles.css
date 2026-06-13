@@ -554,11 +554,11 @@ footer p {
 
     footer {
         h2 {
-            font-size: 1.8rem;
+            font-size: 1.5rem;
         }
 
         p {
-            font-size: 0.8rem;
+            font-size: 0.7rem;
         }
 
     }
@@ -568,14 +568,23 @@ footer p {
         flex-direction: column;
 
         img {
-            width: 400px;
+            width: 300px;
         }
+    }
+
+    .localizacao h2 {
+        font-size: 1.5rem;
+    }
+
+    .localizacao p {
+        font-size: 1rem;
     }
 
     .mapa {
         iframe {
-            width: 350px;
-            width: 350px;
+            width: 300px;
+            width: 300px;
+            margin: 0 auto;
         }
     }
 
