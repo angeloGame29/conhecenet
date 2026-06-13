@@ -415,7 +415,7 @@ header {
 
 .faq {
     background-image: var(--linear-gradient);
-    padding: 10rem 2rem;
+    padding: 3rem 2rem;
     color: var(--cor-primaria);
 
 }
