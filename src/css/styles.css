@@ -10,6 +10,7 @@
 body {
     font-family: 'Montserrat', Arial, Helvetica, sans-serif;
     line-height: 1.6;
+    overflow-x: hidden;
     background-color: var(--cor-primaria);
     padding-top: 60px;
 }
