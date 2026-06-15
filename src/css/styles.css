@@ -49,7 +49,7 @@ html {
     cursor: pointer;
     background: transparent;
     color: var(--cor-primaria);
-    font-weight: bold;
+    font-size: 1rem;
 }
 
 .btn:hover {
@@ -423,7 +423,7 @@ header {
 
 .btn-outline {
     background-image: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
-    color: var(--cor-text-a);
+    color: var(--cor-primaria);
     max-width: 800px;
     transition: 0.3s;
     margin-top: 1.5rem;
@@ -542,7 +542,7 @@ footer p {
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 2rem;
+        gap: 1rem;
 
         transform: translateY(-120%);
         transition: transform .4s ease;
