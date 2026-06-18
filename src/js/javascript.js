@@ -54,16 +54,16 @@ document.addEventListener('DOMContentLoaded', () => {
     ScrollReveal().reveal('#hero-stats li', {
         origin: 'bottom',
         duration: 1000,
-        distance: '20%',
-        interval: 700
+        distance: '25%',
+        interval: 550
     });
 
-    ScrollReveal().reveal('#servicos-grids article', {
-        origin: 'left',
-        duration: 1000,
-        distance: '55px',
-        interval: 650
-    });
+    // ScrollReveal().reveal('#servicos-grids article', {
+    //     origin: 'left',
+    //     duration: 1000,
+    //     distance: '55px',
+    //     interval: 650
+    // });
 
 });
 
@@ -86,3 +86,36 @@ if (localStorage.getItem("theme") === "dark") {
     document.body.classList.add("dark-mode");
     toggle.innerHTML = "☀️";
 }
+
+const swiper = new Swiper("#servicos-grids", {
+
+    slidesPerView: 1.15,
+    spaceBetween: 16,
+
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+
+    breakpoints: {
+
+        640: {
+            slidesPerView: 2,
+        },
+
+        992: {
+            slidesPerView: 3,
+        },
+
+        1400: {
+            slidesPerView: 4,
+        }
+
+    },
+
+    autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+    }
+
+});

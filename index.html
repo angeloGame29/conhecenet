@@ -5,8 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/src/css/styles.css">
-     <link rel="icon" type="image/png" href="/src/img/logoconhecenetIcon.ico">
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="src/css/swiper-bundle.min.css">
+
+
+
+    <link rel="icon" type="image/png" href="/src/img/logoconhecenetIcon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <script src="https://unpkg.com/scrollreveal"></script>
 
     <title>conhecenet</title>
@@ -20,7 +24,7 @@
                 <li><a href="#anuncio">início</a></li>
                 <li><a href="#motivo">Motivo</a></li>
                 <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#servicos">Planos</a></li>
                 <li><a href="#contato">Contato</a></li>
                 <li><a href="#faq">Dúvidas</a></li>
                 <li><a id="theme-toggle">🌙</a></li>
@@ -61,18 +65,36 @@
                 experiências sem limites.</p>
 
             <ul class="hero-stats" id="hero-stats">
-                <li><strong>Internet Rápida e Estável</strong> Tenha conexão de alta velocidade para estudar, trabalhar,
-                    assistir vídeos e jogar sem travamentos.</li>
-                <li><strong>Suporte Ágil e Humanizado</strong> Conte com uma equipe pronta para atender você de forma
-                    rápida e eficiente sempre que precisar.</li>
-                <li><strong>Excelente Custo-Benefício</strong> Planos acessíveis com qualidade garantida, oferecendo
-                    mais internet pelo melhor preço da região.</li>
-                <li><strong>Conexão Segura</strong>Navegue com mais tranquilidade e estabilidade, contando com uma rede
-                    confiável para todas as suas atividades.</li>
-                <li><strong>Streaming Sem Interrupções</strong> Assista filmes, séries e transmissões ao vivo em alta
-                    qualidade, sem travamentos ou quedas de conexão.</li>
-                <li><strong>Ideal para Games Online</strong>Tenha respostas mais rápidas e partidas mais fluidas com uma
-                    conexão preparada para gamers.</li>
+                <li>
+                    <div class="card"><strong><i class="fa-solid fa-bolt"></i> Internet Rápida e Estável</strong> Tenha
+                        conexão de alta velocidade para estudar, trabalhar,
+                        assistir vídeos e jogar sem travamentos.</div>
+                </li>
+                <li>
+                    <div class="card"><strong><i class="fa-solid fa-headset"></i> Suporte Ágil e Humanizado</strong>
+                        Conte com uma equipe pronta para atender você de forma
+                        rápida e eficiente sempre que precisar.</div>
+                </li>
+                <li>
+                    <div class="card"><strong><i class="fa-solid fa-money-bill"></i> Excelente Custo-Benefício</strong>
+                        Planos acessíveis com qualidade garantida, oferecendo
+                        mais internet pelo melhor preço da região.</div>
+                </li>
+                <li>
+                    <div class="card"><strong><i class="fa-solid fa-wifi"></i> Conexão Segura</strong>Navegue com mais
+                        tranquilidade e estabilidade, contando com uma rede
+                        confiável para todas as suas atividades.</div>
+                </li>
+                <li>
+                    <div class="card"><strong><i class="fa-solid fa-circle-play"></i> Streaming Sem
+                            Interrupções</strong> Assista filmes, séries e transmissões ao vivo em alta
+                        qualidade, sem travamentos ou quedas de conexão.</div>
+                </li>
+                <li>
+                    <div class="card"><strong><i class="fa-solid fa-gamepad"></i> Ideal para Games Online</strong>Tenha
+                        respostas mais rápidas e partidas mais fluidas com uma
+                        conexão preparada para gamers.</div>
+                </li>
 
             </ul>
         </section>
@@ -88,54 +110,140 @@
         </section>
 
         <section id="servicos" class="servicos">
-            <h2>Nossos serviços</h2>
+            <h2>Nossos planos</h2>
             <p>Oferecemos planos de internet ideais para residências e empresas, com foco em desempenho, estabilidade e
                 suporte contínuo.</p>
 
-            <div class="servicos-grids" id="servicos-grids">
-                <article class="servicos-cards">
-                    <img src="https://plus.unsplash.com/premium_photo-1661878265739-da90bc1af051?q=80&w=1086&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                        alt="fibra otica">
-                    <h3>Plano Essencial – 300 MEGA</h3>
-                    <p>Ideal para quem usa internet no dia a dia, assiste vídeos, navega nas redes sociais e faz
-                        chamadas online com estabilidade e bom desempenho.</p>
-                    <strong>R$ 74,90 / mês</strong>
-                    <a href="https://wa.me/5583996004554?text=Olá!%20👋%20Tenho%20interesse%20no%20Plano%20Essencial%20de%20300%20MEGA%20por%20R$%2074,90/mês.%20Gostaria%20de%20mais%20informações%20e%20contratar%20o%20plano."
-                        class="btn">Contratar</a>
-                </article>
+            <div class="servicos-grids container swiper" id="servicos-grids">
+                <div class="swiper-wrapper">
+                    <article class="servicos-cards swiper-slide">
+                        <!-- <div class="tag-popular">MAIS POPULAR</div> -->
 
-                <article class="servicos-cards">
-                    <img src="https://plus.unsplash.com/premium_photo-1664297950425-99a968926a74?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                        alt="fibra otica">
-                    <h3>Plano Turbo – 400 MEGA</h3>
-                    <p>Perfeito para famílias e quem conecta vários dispositivos ao mesmo tempo. Mais velocidade para
-                        streaming, home office e jogos online sem travamentos.</p>
-                    <strong>R$ 89,90 / mês</strong>
-                    <a href="https://wa.me/5583996004554?text=Olá!%20👋%20Tenho%20interesse%20no%20Plano%20Turbo%20de%20400%20MEGA%20por%20R$%2089,90/mês.%20Gostaria%20de%20mais%20informações%20e%20contratar%20o%20plano."
-                        class="btn">Contratar</a>
-                </article>
+                        <img src="/src/img/logofundobranco1.png" alt="fibra">
 
-                <article class="servicos-cards">
-                    <img src="https://plus.unsplash.com/premium_photo-1661962646119-0c9d2a604a63?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                        alt="fibra otica">
-                    <h3>Plano Ultra – 500 MEGA</h3>
-                    <p>Alta performance para quem exige o máximo da conexão. Ideal para gamers, criadores de conteúdo e
-                        empresas que precisam de velocidade e estabilidade total.</p>
-                    <strong>R$ 99,90 / mês</strong>
-                    <a href="https://wa.me/5583996004554?text=Olá!%20👋%20Tenho%20interesse%20no%20Plano%20Ultra%20de%20500%20MEGA%20por%20R$%2099,90/mês.%20Gostaria%20de%20mais%20informações%20e%20contratar%20o%20plano."
-                        class="btn">Contratar</a>
-                </article>
+                        <!-- <span class="categoria">Internet Residencial</span> -->
 
-                <article class="servicos-cards">
-                    <img src="https://plus.unsplash.com/premium_photo-1664299128726-f30920dd5df2?q=80&w=1086&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                        alt="fibra otica">
-                    <h3>Plano Master – 700 MEGA</h3>
-                    <p>Nossa internet mais rápida. Velocidade extrema para uso intenso, grandes downloads, uploads
-                        rápidos e múltiplos usuários simultâneos.</p>
-                    <strong>R$ 119,90 / mês</strong>
-                    <a href="https://wa.me/5583996004554?text=Olá!%20👋%20Tenho%20interesse%20no%20Plano%20Master%20de%20700%20MEGA%20por%20R$%20119,90/mês.%20Gostaria%20de%20mais%20informações%20e%20contratar%20o%20plano."
-                        class="btn">Contratar</a>
-                </article>
+                        <h3>300 <span>MEGA</span></h3>
+
+                        <p>
+                            Ideal para o dia a dia, redes sociais, vídeos e chamadas online com estabilidade.
+                        </p>
+
+                        <div class="preco">
+                            <small>R$</small>
+                            <strong>74</strong>
+                            <span>,90/mês</span>
+                        </div>
+
+                        <a href="https://wa.me/5583996004554?text=Olá!%20👋%20Tenho%20interesse%20no%20Plano%20Essencial%20de%20300%20MEGA%20por%20R$%2074,90/mês.%20Gostaria%20de%20mais%20informações%20e%20contratar%20o%20plano."
+                            class="btn"><i class="fa-brands fa-whatsapp"></i> Contratar Agora</a>
+
+                        <h4>Benefícios incluídos no plano:</h4>
+
+                        <ul class="beneficios">
+                            <li>✓ Wi-Fi grátis</li>
+                            <li>✓ Instalação grátis</li>
+                            <li>✓ Suporte humanizado</li>
+                        </ul>
+                    </article>
+
+                    <article class="servicos-cards swiper-slide destaque">
+                        <div class="tag-popular">MAIS POPULAR</div>
+
+                        <img src="/src/img/logofundobranco1.png" alt="fibra">
+
+                        <!-- <span class="categoria">Internet Residencial</span> -->
+
+                        <h3>400 <span>MEGA</span></h3>
+
+                        <p>
+                            Perfeito para famílias e vários dispositivos. Streaming, home office e jogos sem
+                            travamentos.
+                        </p>
+
+                        <div class="preco">
+                            <small>R$</small>
+                            <strong>89</strong>
+                            <span>,90/mês</span>
+                        </div>
+
+                        <a href="https://wa.me/5583996004554?text=Olá!%20👋%20Tenho%20interesse%20no%20Plano%20Turbo%20de%20400%20MEGA%20por%20R$%2089,90/mês.%20Gostaria%20de%20mais%20informações%20e%20contratar%20o%20plano."
+                            class="btn"><i class="fa-brands fa-whatsapp"></i> Contratar Agora</a>
+
+                        <h4>Benefícios incluídos no plano:</h4>
+
+                        <ul class="beneficios">
+                            <li>✓ Wi-Fi grátis</li>
+                            <li>✓ Instalação grátis</li>
+                            <li>✓ Suporte humanizado</li>
+                        </ul>
+                    </article>
+
+                    <article class="servicos-cards swiper-slide">
+                        <!-- <div class="tag-popular">MAIS POPULAR</div> -->
+
+                        <img src="/src/img/logofundobranco1.png" alt="fibra">
+
+                        <!-- <span class="categoria">Internet Residencial</span> -->
+
+                        <h3>500 <span>MEGA</span></h3>
+
+                        <p>
+                            Alta performance para gamers, criadores e empresas que exigem velocidade e estabilidade.
+                        </p>
+
+                        <div class="preco">
+                            <small>R$</small>
+                            <strong>99</strong>
+                            <span>,90/mês</span>
+                        </div>
+
+                        <a href="https://wa.me/5583996004554?text=Olá!%20👋%20Tenho%20interesse%20no%20Plano%20Ultra%20de%20500%20MEGA%20por%20R$%2099,90/mês.%20Gostaria%20de%20mais%20informações%20e%20contratar%20o%20plano."
+                            class="btn"><i class="fa-brands fa-whatsapp"></i> Contratar Agora</a>
+
+                        <h4>Benefícios incluídos no plano:</h4>
+
+                        <ul class="beneficios">
+                            <li>✓ Wi-Fi grátis</li>
+                            <li>✓ Instalação grátis</li>
+                            <li>✓ Suporte humanizado</li>
+                        </ul>
+                    </article>
+
+                    <article class="servicos-cards swiper-slide">
+                        <!-- <div class="tag-popular">MAIS POPULAR</div> -->
+
+                        <img src="/src/img/logofundobranco1.png" alt="fibra">
+
+                        <!-- <span class="categoria">Internet Residencial</span> -->
+
+                        <h3>700 <span>MEGA</span></h3>
+
+                        <p>
+                            Nossa internet mais rápida, ideal para uso intenso, downloads e múltiplos usuários.
+                        </p>
+
+                        <div class="preco">
+                            <small>R$</small>
+                            <strong>119</strong>
+                            <span>,90/mês</span>
+                        </div>
+
+                        <a href="https://wa.me/5583996004554?text=Olá!%20👋%20Tenho%20interesse%20no%20Plano%20Master%20de%20700%20MEGA%20por%20R$%20119,90/mês.%20Gostaria%20de%20mais%20informações%20e%20contratar%20o%20plano."
+                            class="btn"><i class="fa-brands fa-whatsapp"></i> Contratar Agora</a>
+
+                        <h4>Benefícios incluídos no plano:</h4>
+
+                        <ul class="beneficios">
+                            <li>✓ Wi-Fi grátis</li>
+                            <li>✓ Instalação grátis</li>
+                            <li>✓ Suporte humanizado</li>
+                        </ul>
+                    </article>
+                </div>
+
+                <div class="swiper-pagination"></div>
+
             </div>
         </section>
 
@@ -207,6 +315,7 @@
         <p>© 2026 conhecenet — Conectando você ao melhor da internet.</p>
     </footer>
 
+    <script src="src/js/swiper-bundle.min.js"></script>
     <script src="/src/js/javascript.js"></script>
 
 </body>

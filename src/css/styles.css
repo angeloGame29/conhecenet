@@ -103,8 +103,11 @@ header {
     animation: ampliar 4s ease-in-out infinite;
 }
 
-.logo:hover {
-    transform: scale(1.1);
+@media (hover: hover) and (pointer: fine) {
+    .logo:hover {
+        transform: scale(1.1);
+    }
+
 }
 
 .nav-Links {
@@ -147,6 +150,7 @@ header {
 .menu-toggle.active span:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
 }
+
 .anuncio {
     width: 100vw;
     height: 100%;
@@ -258,7 +262,7 @@ header {
     margin: 0 auto;
 }
 
-.hero-stats li {
+.hero-stats .card {
     display: flex;
     text-align: center;
     flex-direction: column;
@@ -272,12 +276,14 @@ header {
     border: 1px solid rgba(255, 255, 255, 0.26);
 
     padding: 2rem;
-    transition: 0.5s;
+    transition: all .3s ease;
 }
 
-.hero-stats li:hover {
-    transform: translateY(-5px);
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+@media (hover: hover) and (pointer: fine) {
+    .hero-stats .card:hover {
+        transform: translateY(-15px);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, .1);
+    }
 }
 
 .hero-stats strong {
@@ -334,78 +340,170 @@ header {
 }
 
 .servicos {
-    background-image: var(--linear-gradient);
+    background: var(--linear-gradient);
     padding: 3rem 2rem;
-    text-align: center;
     color: var(--cor-text-b);
-    height: auto;
 }
 
 .servicos h2 {
-    font-size: 2.5rem;
+    line-height: 1;
+    font-size: 2rem;
     margin-bottom: 1rem;
-
+    text-align: center;
 }
 
 .servicos p {
-    font-size: 1.1rem;
-    max-width: 800px;
-    margin: 0 auto;
-    margin-bottom: 1rem;
-    color: var(--cor-primaria);
+    text-align: center;
 }
 
+
+
 .servicos-grids {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 2rem;
-    max-width: 1200px;
-    margin: 0 auto;
+    margin-top: 3rem;
+    padding-bottom: 50px;
 }
 
 .servicos-cards {
-    padding: 2rem;
-    text-align: center;
-
-    background: rgba(255, 255, 255, 0.19);
-    border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(4.7px);
-    -webkit-backdrop-filter: blur(4.7px);
-    border: 1px solid rgba(255, 255, 255, 0.26);
-
-    cursor: pointer;
-    transition: 0.5s;
+    background: #fff;
+    color: var(--cor-text-a);
+    border-radius: 25px;
+    overflow: hidden;
+    position: relative;
+    min-height: 420px;
+    transition: .3s;
+    cursor: grab;
 }
 
-.servicos-cards:hover {
-    transform: translateY(-2px);
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-
+@media (hover: hover) and (pointer: fine) {
+    .servicos-cards:hover {
+        transform: translateY(-10px);
+    }
 }
 
 .servicos-cards img {
     width: 100%;
-    height: 200px;
+    height: 170px;
     object-fit: cover;
-    border-radius: 10px;
-    margin-bottom: 1rem;
 }
 
+/* .servicos-cards .categoria {
+    text-align: center;
+    display: block;
+    background: #7dce13;
+    color: #226127;
+    padding: 1rem 2rem .5rem;
+    font-size: 1rem;
+} */
+
 .servicos-cards h3 {
-    margin-bottom: 1rem;
-    color: var(--cor-text-c);
+    text-align: center;
+    background: #7dce13;
+    color: #fff;
+    margin: 0;
+    padding: 1rem 2rem;
+    font-size: 4rem;
+    line-height: 1;
+}
+
+.servicos-cards h3 span {
+    display: block;
+    color: #226127;
+    font-size: 2rem;
 }
 
 .servicos-cards p {
-    font-size: 1rem;
-    font-weight: 500;
+    text-align: center;
+    font-size: .8rem;
+    font-weight: 400;
+    padding: 1.5rem 2rem;
+    color: #555;
 }
 
-.servicos-cards strong {
-    color: var(--cor-text-c);
-    margin-right: 1rem;
+.preco {
+    padding: 0 2rem;
+    margin-bottom: 1.5rem;
 }
+
+.preco small {
+    font-size: 1.8rem;
+    color: #7dce13;
+}
+
+.preco strong {
+    font-size: 4rem;
+    color: #7dce13;
+}
+
+.preco span {
+    color: #7dce13;
+    font-weight: bold;
+}
+
+.servicos-cards .btn {
+    display: block;
+    width: calc(100% - 4rem);
+    margin: auto;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 50px;
+    background: #7dce13;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: .3s;
+}
+
+.servicos-cards .btn:hover {
+    background: #6AB010;
+}
+
+.servicos-cards h4 {
+    text-align: start;
+    font-size: 1rem;
+    color: #7dce13;
+    font-weight: bold;
+    padding: 1.5rem 2rem .5rem 2rem;
+}
+
+.beneficios {
+    list-style: none;
+    padding: .5rem 2rem 2rem 2rem;
+    margin: 0;
+}
+
+.beneficios li {
+    margin-bottom: 1rem;
+    color: #444;
+}
+
+.tag-popular {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #ffe600;
+    color: #226127;
+    font-weight: bold;
+    padding: .8rem 2rem;
+    border-radius: 0 0 20px 20px;
+    z-index: 10;
+}
+
+/* Plano destaque */
+
+.destaque {
+    border: 5px solid #ffe600;
+    transform: scale(1.03);
+}
+
+.destaque:hover {
+    transform: scale(1.03) translateY(-10px);
+}
+
+.swiper-wrapper {
+    margin-bottom: 3rem;
+}
+
 
 .contato {
     padding: 3rem 2rem;
@@ -524,6 +622,61 @@ footer p {
     color: var(--cor-text-a);
 }
 
+@media (max-width: 390px) {
+
+    .logo:active {
+        transform: scale(1.1);
+    }
+
+    .hero-stats .card:active {
+        transform: scale(1.2);
+    }
+
+    .servicos-grids {
+        padding-inline: 12px;
+    }
+
+    .servicos-cards {
+        max-width: 100%;
+        border-radius: 22px;
+    }
+
+    .servicos-cards img {
+        width: 100%;
+        height: 90px;
+    }
+
+    .tag-popular {
+        width: 180px;
+        font-size: .8rem;
+        font-weight: bold;
+        padding: .4rem 2rem;
+    }
+
+    .servicos-cards p {
+        padding: .8rem 1.5rem;
+    }
+
+    .preco {
+        padding: 0 1rem;
+        margin-bottom: .2rem;
+    }
+
+    .servicos-cards h4 {
+        font-size: .9rem;
+    }
+
+    .beneficios {
+        padding: .5rem 1rem 1rem 1rem;
+    }
+
+    .beneficios li {
+        font-size: .8rem;
+        margin-bottom: 5px;
+    }
+
+}
+
 @media (max-width: 480px) {
     .hero-stats {
         flex-direction: column;
@@ -601,6 +754,8 @@ footer p {
             width: 300px;
         }
     }
+
+
     .localizacao h2 {
         font-size: 1.5rem;
     }

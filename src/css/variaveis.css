@@ -6,6 +6,8 @@
     --cor-secundaria: #6AB010;
     --cor-text-c: #82ff97;
 
+    --cor-card:#fff;
+
     --linear-gradient: linear-gradient(
         180deg,
         #6AB010 0%,
@@ -20,6 +22,8 @@
     --cor-text-b: #6AB010;
     --cor-secundaria: #7dce13;
     --cor-text-c: #82ff97;
+    
+    --cor-card: #226127;
 
     --linear-gradient: linear-gradient(
         180deg,
