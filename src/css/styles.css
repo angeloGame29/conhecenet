@@ -13,6 +13,11 @@ body {
     overflow-x: hidden;
     background-color: var(--cor-primaria);
     padding-top: 60px;
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 a {
@@ -462,7 +467,7 @@ header {
     font-size: 1rem;
     color: #7dce13;
     font-weight: bold;
-    padding: 1.5rem 2rem .5rem 2rem;
+    padding: .5rem 2rem .5rem 2rem;
 }
 
 .beneficios {
@@ -492,7 +497,7 @@ header {
 /* Plano destaque */
 
 .destaque {
-    border: 5px solid #ffe600;
+    border: 2px solid #ffe600;
     transform: scale(1.03);
 }
 
@@ -668,7 +673,7 @@ footer p {
     }
 
     .servicos-cards h4 {
-        font-size: .9rem;
+        font-size: .7rem;
     }
 
     .beneficios {
