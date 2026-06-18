@@ -627,7 +627,7 @@ footer p {
     .logo:active {
         transform: scale(1.1);
     }
-    
+
     .hero-stats {
         flex-direction: column;
         flex-wrap: wrap;
