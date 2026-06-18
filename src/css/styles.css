@@ -622,10 +622,15 @@ footer p {
     color: var(--cor-text-a);
 }
 
-@media (max-width: 390px) {
+@media (max-width: 480px) {
 
     .logo:active {
         transform: scale(1.1);
+    }
+    
+    .hero-stats {
+        flex-direction: column;
+        flex-wrap: wrap;
     }
 
     .hero-stats .card:active {
@@ -675,13 +680,6 @@ footer p {
         margin-bottom: 5px;
     }
 
-}
-
-@media (max-width: 480px) {
-    .hero-stats {
-        flex-direction: column;
-        flex-wrap: wrap;
-    }
 }
 
 @media (max-width: 768px) {
