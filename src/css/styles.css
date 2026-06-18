@@ -20,6 +20,17 @@ body {
     user-select: none;
 }
 
+img {
+    -webkit-touch-callout: none;
+    /* Desativa o menu de salvar no iOS/Android */
+    -webkit-user-select: none;
+    /* Safari */
+    user-select: none;
+    /* Padrão */
+    pointer-events: none;
+    /* Impede qualquer clique ou arrastada na imagem */
+}
+
 a {
     text-decoration: none;
     color: inherit;
