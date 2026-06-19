@@ -74,17 +74,17 @@ toggle.addEventListener("click", () => {
 
     if (document.body.classList.contains("dark-mode")) {
         localStorage.setItem("theme", "dark");
-        toggle.innerHTML = "☀︎";
+        toggle.innerHTML = "☀️";
     } else {
         localStorage.setItem("theme", "light");
-        toggle.innerHTML = "⏾";
+        toggle.innerHTML = "🌙";
     }
 });
 
 // Mantém o tema salvo
 if (localStorage.getItem("theme") === "dark") {
     document.body.classList.add("dark-mode");
-    toggle.innerHTML = "☀︎";
+    toggle.innerHTML = "☀️";
 }
 
 const swiper = new Swiper("#servicos-grids", {
