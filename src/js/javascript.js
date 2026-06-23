@@ -69,22 +69,27 @@ document.addEventListener('DOMContentLoaded', () => {
 
 const toggle = document.getElementById("theme-toggle");
 
-toggle.addEventListener("click", () => {
-    document.body.classList.toggle("dark-mode");
+toggle.addEventListener("change", () => {
 
-    if (document.body.classList.contains("dark-mode")) {
+    if (toggle.checked) {
+        document.body.classList.add("dark-mode");
+
         localStorage.setItem("theme", "dark");
-        toggle.innerHTML = "☀️";
     } else {
+        document.body.classList.remove("dark-mode");
+
         localStorage.setItem("theme", "light");
-        toggle.innerHTML = "🌙";
     }
+
 });
 
 // Mantém o tema salvo
 if (localStorage.getItem("theme") === "dark") {
+
     document.body.classList.add("dark-mode");
-    toggle.innerHTML = "☀️";
+
+    toggle.checked = true;
+
 }
 
 const swiper = new Swiper("#servicos-grids", {
