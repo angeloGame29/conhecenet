@@ -96,13 +96,13 @@ html {
   border-radius: 50%;
   left: 10%;
   bottom: 15%;
-  box-shadow: inset 8px -4px 0px 0px #fff000;
+  box-shadow: inset 8px -4px 0px 0px #fff;
   background: var(--cor-secundaria);
   transition: .5s;
 }
 
 input:checked + .slider {
-  background-color: var(--cor-secundaria);
+  background-color: var(--cor-text-b);
 }
 
 input:checked + .slider:before {
