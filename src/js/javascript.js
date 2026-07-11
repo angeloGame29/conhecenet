@@ -124,3 +124,33 @@ const swiper = new Swiper("#servicos-grids", {
     }
 
 });
+
+const swiper1 = new Swiper(".reviews-slider", {
+
+    slidesPerView: 1.15,
+    spaceBetween: 0,
+
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+
+    breakpoints: {
+        640: {
+            slidesPerView: 2,
+        },
+        992: {
+            slidesPerView: 3,
+        },
+        1400: {
+            slidesPerView: 4,
+        }
+    },
+
+    autoplay: {
+        delay: 2000,
+        disableOnInteraction: false,
+    },
+
+    loop: true
+});

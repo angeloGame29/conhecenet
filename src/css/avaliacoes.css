@@ -5,11 +5,9 @@
 
 .reviews-slider{
     display:flex;
-    gap:20px;
+    gap: 20px;
     max-width: max-content;
-    padding:20px;
-
-    animation: gira 20s linear infinite;
+    padding: 20px;
 }
 
 .reviews-slider img{
@@ -20,16 +18,6 @@
     border:2px solid #7EE000;
 }
 
-@keyframes gira {
-    from {
-        transform: translateX(0);
-    }
-
-    to {
-        transform: translateX(-50%);
-    }
-}
-
-.reviews-slider:hover{
-    animation-play-state: paused;
+.swiper-slide {
+    width: 200px;
 }
