@@ -1,6 +1,7 @@
 .reviews {
     overflow: hidden;
     margin-top: 20px;
+    padding: 3rem 2rem;
 }
 
 .reviews-slider{

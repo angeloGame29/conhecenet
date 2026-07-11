@@ -128,7 +128,7 @@ const swiper = new Swiper("#servicos-grids", {
 const swiper1 = new Swiper(".reviews-slider", {
 
     slidesPerView: 1.15,
-    spaceBetween: 0,
+    spaceBetween: 16,
 
     pagination: {
         el: ".swiper-pagination",
