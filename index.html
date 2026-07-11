@@ -17,6 +17,7 @@
 </head>
 
 <body>
+
     <header>
         <nav class="navbar">
             <img src="/src/img/logoconhecenet.png" alt="logo" class="logo">
@@ -26,11 +27,14 @@
                 <li><a href="#sobre">Sobre</a></li>
                 <li><a href="#servicos">Planos</a></li>
                 <li><a href="#contato">Contato</a></li>
+                <li><a href="#localizacao">Localização</a></li>
+                <li><a href="#reviews">Depoimentos</a></li>
                 <li><a href="#faq">Dúvidas</a></li>
                 <li> <label class="switch">
                         <input type="checkbox" id="theme-toggle">
                         <span class="slider"></span>
-                    </label></li>
+                    </label>
+                </li>
             </ul>
 
             <div class="menu-toggle">
@@ -43,6 +47,8 @@
         </nav>
     </header>
     <main>
+
+
         <section class="anuncio" id="anuncio">
             <div class="slides">
                 <img src="/src/img/1.png" alt="">
@@ -52,21 +58,42 @@
             </div>
         </section>
 
+        <section class="ANNOUNCEMENT">
+            <!-- ANNOUNCEMENT BAR -->
+            <div id="announcement-bar" role="marquee" aria-label="Promoções e avisos">
+                <div class="announcement-slides">
+                    <span>Campeã do Vale: conectando você com qualidade e confiança</span>
+                    <span>Planos de até 700MEGA para navegar sem limites</span>
+                    <span>Atendimento rápido</span>
+                    <span>Atendimento via WhatsApp das 8h às 22h</span>
+                    <span>Instalação rápida e suporte técnico especializado</span>
+                    <span>Baixa latência para jogos, streaming e home office</span>
+                    <span>Conexão estável para você ficar sempre online</span>
+                    <span>Internet 100% Fibra para sua casa e empresa</span>
+                </div>
+            </div>
+        </section>
+
         <section id="home" class="hero">
             <div class="hero-conteudo-one">
-                <h2>Internet rápida, estável e sem dor de cabeça</h2>
-                <p>Conecte sua casa ou empresa com a <strong>conhecenet</strong> e tenha velocidade de verdade, suporte
-                    ágil e instalação rápida.</p>
+                <div class="section-header">
+                    <h2 class="section-title">Internet rápida, estável e sem dor de cabeça</h2>
+                    <p class="section-sub">Conecte sua casa ou empresa com a <strong>conhecenet</strong> e tenha
+                        velocidade de verdade, suporte
+                        ágil e instalação rápida.</p>
+                </div>
                 <img src="src/img/local.png" alt="">
 
             </div>
         </section>
 
         <section class="motivos" id="motivo">
-            <h2>Por que escolher a conhecenet?</h2>
-            <p>Mais que uma provedora de internet, somos a ponte que conecta você a momentos, oportunidades e
-                experiências sem limites.</p>
-
+            <div class="section-header">
+                <h2 class="section-title">Por que escolher a conhecenet?</h2>
+                <p class="section-sub">Mais que uma provedora de internet, somos a ponte que conecta você a momentos,
+                    oportunidades e
+                    experiências sem limites.</p>
+            </div>
             <ul class="hero-stats" id="hero-stats">
                 <li>
                     <div class="card"><strong><i class="fa-solid fa-bolt"></i> Internet Rápida e Estável</strong> Tenha
@@ -104,21 +131,59 @@
 
         <section id="sobre" class="sobre">
             <div class="container">
-                <h2>Quem somos</h2>
-                <p>A <strong>conhecenet</strong> é especializada em levar internet de qualidade para você. Trabalhamos
-                    com tecnologia moderna e atendimento humanizado para garantir uma conexão rápida, segura e confiável
-                    todos os dias.</p>
+                <div class="section-header">
+                    <h2 class="section-title">Quem somos</h2>
+                    <p class="section-sub">A <strong>conhecenet</strong> é especializada em levar internet de qualidade
+                        para você. Trabalhamos
+                        com tecnologia moderna e atendimento humanizado para garantir uma conexão rápida, segura e
+                        confiável
+                        todos os dias.</p>
+                </div>
             </div>
             <img src="/src/img/daniel.png" class="foguete">
         </section>
 
         <section id="servicos" class="servicos">
-            <h2>Nossos planos</h2>
-            <p>Oferecemos planos de internet ideais para residências e empresas, com foco em desempenho, estabilidade e
-                suporte contínuo.</p>
-
+            <div class="section-header">
+                <h2 class="section-title">Nossos planos</h2>
+                <p class="section-sub">Oferecemos planos de internet ideais para residências e empresas, com foco em
+                    desempenho, estabilidade e
+                    suporte contínuo.</p>
+            </div>
             <div class="servicos-grids container swiper" id="servicos-grids">
                 <div class="swiper-wrapper">
+
+                    <article class="servicos-cards swiper-slide">
+                        <!-- <div class="tag-popular">MAIS POPULAR</div> -->
+
+                        <img src="/src/img/logofundobranco1.png" alt="fibra">
+
+                        <!-- <span class="categoria">Internet Residencial</span> -->
+
+                        <h3>100 <span>MEGA</span></h3>
+
+                        <p>
+                            Ideal para o dia a dia, redes sociais, vídeos e chamadas online com estabilidade.
+                        </p>
+
+                        <div class="preco">
+                            <small>R$</small>
+                            <strong>64</strong>
+                            <span>,90/mês</span>
+                        </div>
+
+                        <a href="https://wa.me/5583996004554?text=Olá!%20👋%20Tenho%20interesse%20no%20Plano%20Essencial%20de%20100%20MEGA%20por%20R$%2064,90/mês.%20Gostaria%20de%20mais%20informações%20e%20contratar%20o%20plano."
+                            class="btn"><i class="fa-brands fa-whatsapp"></i> Contratar Agora</a>
+
+                        <h4>Benefícios incluídos no plano:</h4>
+
+                        <ul class="beneficios">
+                            <li>✓ Wi-Fi grátis</li>
+                            <li>✓ Instalação grátis</li>
+                            <li>✓ Suporte humanizado</li>
+                        </ul>
+                    </article>
+
                     <article class="servicos-cards swiper-slide">
                         <!-- <div class="tag-popular">MAIS POPULAR</div> -->
 
@@ -129,7 +194,7 @@
                         <h3>300 <span>MEGA</span></h3>
 
                         <p>
-                            Ideal para o dia a dia, redes sociais, vídeos e chamadas online com estabilidade.
+                            Mais desempenho para sua casa, com velocidade e estabilidade.
                         </p>
 
                         <div class="preco">
@@ -138,7 +203,7 @@
                             <span>,90/mês</span>
                         </div>
 
-                        <a href="https://wa.me/5583996004554?text=Olá!%20👋%20Tenho%20interesse%20no%20Plano%20Essencial%20de%20300%20MEGA%20por%20R$%2074,90/mês.%20Gostaria%20de%20mais%20informações%20e%20contratar%20o%20plano."
+                        <a href="https://wa.me/5583996004554?text=Olá!%20👋%20Tenho%20interesse%20no%20Plano%20Plus%20de%20300%20MEGA%20por%20R$%2074,90/mês.%20Gostaria%20de%20mais%20informações%20e%20contratar%20o%20plano."
                             class="btn"><i class="fa-brands fa-whatsapp"></i> Contratar Agora</a>
 
                         <h4>Benefícios incluídos no plano:</h4>
@@ -251,18 +316,113 @@
         </section>
 
         <section id="contato" class="contato">
-            <div class="comunicacao">
-                <h2>Pronto para ter internet de verdade?</h2>
-                <p>Entre em contato agora mesmo e descubra o plano ideal para você.</p>
-                <a href="https://wa.me/5583996004554?text=Olá!%20😊%20Boa%20tarde.%0A%0AEstou%20procurando%20uma%20internet%20rápida%20e%20confiável%20para%20minha%20casa%20e%20gostaria%20de%20conhecer%20os%20planos%20da%20ConheceNet.%0A%0APoderiam%20me%20apresentar%20as%20opções%20disponíveis,%20valores%20mensais%20e%20condições%20de%20instalação?%0A%0ADesde%20já%20agradeço%20pela%20atenção!%20🚀💚"
-                    class="btn" target="_blank">Nosso WhatsApp</a>
-                <a href="https://www.instagram.com/conhecenet_?igsh=Nmt2NzJkeTc4dHVi&utm_source=qr"
-                    class="btn btn-outline" target="_blank">Nosso instagram</a>
+            <div class="section-header">
+                <h2 class="section-title">Entre em Contato</h2>
+                <p class="section-sub">Estamos aqui para ajudar. Escolha o canal de atendimento que preferir.</p>
             </div>
-            <div class="localizacao">
-                <h2>Nossa localização</h2>
-                <p>Rua Francisco Cleto, 53B - Mamanguape/pb</p>
-                <div class="mapa">
+            <div class="contact-grid">
+                <div class="contact-form-wrap">
+                    <form id="contact-form" novalidate>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="c-nome">Nome completo *</label>
+                                <input type="text" id="c-nome" placeholder="Seu nome" required autocomplete="name">
+                            </div>
+                            <div class="form-group">
+                                <label for="c-tel">Endereço *</label>
+                                <input type="text" id="c-endereco" placeholder="Rua, número, bairro e cidade"
+                                    autocomplete="street-address">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="c-email">E-mail *</label>
+                            <input type="email" id="c-email" placeholder="seu@email.com" required autocomplete="email">
+                        </div>
+                        <div class="form-group">
+                            <label for="c-msg">Mensagem *</label>
+                            <textarea id="c-msg" placeholder="Como podemos ajudar você?" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary"
+                            style="width:100%;justify-content:center;padding:15px">
+                            <i class="fas fa-paper-plane" aria-hidden="true"></i> Enviar Mensagem
+                        </button>
+                    </form>
+                </div>
+                <div class="contact-info">
+                    <h3>Informações de Contato</h3>
+                    <p>Nossa equipe está disponível para tirar suas dúvidas e ajudar com seu pedido.</p>
+                    <div class="contact-item">
+                        <div class="contact-item-icon"><i class="fab fa-whatsapp" aria-hidden="true"></i></div>
+                        <div class="contact-item-text">
+                            <span>WhatsApp</span>
+                            <strong>(83) 9 9600-4554</strong>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-item-icon"><i class="fas fa-envelope" aria-hidden="true"></i></div>
+                        <div class="contact-item-text">
+                            <span>E-mail</span>
+                            <strong>conhecenet@gmail.com</strong>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-item-icon"><i class="fas fa-clock" aria-hidden="true"></i></div>
+                        <div class="contact-item-text">
+                            <span>Horário de Atendimento</span>
+                            <strong>Segunda a Sábado: 8h – 22h </strong>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-item-icon"><i class="fas fa-map-marker-alt" aria-hidden="true"></i></div>
+                        <div class="contact-item-text">
+                            <span>Endereço</span>
+                            <strong>Rua Francisco Cleto, 53B · Mamanguape - PB</strong>
+                        </div>
+                    </div>
+                    <div class="social-links" aria-label="Redes sociais">
+                        <a href="https://wa.me/5583996004554" class="social-link social-whatsapp" aria-label="WhatsApp"
+                            target="_blank" rel="noopener"><i class="fab fa-whatsapp" aria-hidden="true"></i></a>
+                        <a href="https://www.instagram.com/conhecenet__?igsh=MXV6dmV4djBodzUzbg%3D%3D&utm_source=qr"
+                            class="social-link social-instagram" aria-label="Instagram" target="_blank"><i
+                                class="fab fa-instagram" aria-hidden="true"></i></a>
+                        <!-- <a href="#" class="social-link social-facebook" aria-label="Facebook"><i
+                                class="fab fa-facebook-f" aria-hidden="true"></i></a> -->
+                        <!-- <a href="mailto:contato@techstore.com.br" class="social-link social-email"
+                            aria-label="E-mail"><i class="fas fa-envelope" aria-hidden="true"></i></a> -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="localizacao" class="localizacao">
+            <div class="section-header">
+                <h2 class="section-title">Nossa Localização</h2>
+                <p class="section-sub">Visite nossa loja física ou entre em contato para mais informações.</p>
+            </div>
+            <div class="map-layout">
+                <div class="map-info">
+                    <h3>CONHECENET</h3>
+                    <div class="map-detail">
+                        <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                        <div><span>Endereço</span>Rua Francisco Cleto, 53B, Centro<br>Mamanguape – PB, CEP 58280-000
+                        </div>
+                    </div>
+                    <div class="map-detail">
+                        <i class="fas fa-clock" aria-hidden="true"></i>
+                        <div>
+                            <span>Horários</span>
+                            Segunda a Sexta: 8h às 17h<br>
+                            Sábado: 8h às 12h<br>
+                            Domingo: Fechado
+                        </div>
+                    </div>
+                    <div style="margin-top:24px;display:flex;flex-wrap:wrap;gap:10px">
+                        <a href="https://www.google.com/maps/dir//conhecenet+-+R.+Francisco+Cleto,+53B+-+Centro,+Mamanguape+-+PB,+58280-000/@-6.8393098,-35.1327989,17z/data=!4m16!1m7!3m6!1s0x7ad07f83dab5603:0x47cf62cfb7647838!2sconhecenet!8m2!3d-6.8393098!4d-35.1327989!16s%2Fg%2F11z5ff552t!4m7!1m0!1m5!1m1!1s0x7ad07f83dab5603:0x47cf62cfb7647838!2m2!1d-35.1327989!2d-6.8393098?entry=ttu&g_ep=EgoyMDI2MDcwOC4wIKXMDSoASAFQAw%3D%3D"
+                            class="btn btn-ghost" target="_blank" rel="noopener"><i class="fas fa-directions"
+                                aria-hidden="true"></i> Como Chegar</a>
+                    </div>
+                </div>
+                <div class="map">
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.426929470444!2d-35.132798900000004!3d-6.8393098!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ad07f83dab5603%3A0x47cf62cfb7647838!2sconhecenet!5e0!3m2!1spt-BR!2sbr!4v1781323899281!5m2!1spt-BR!2sbr"
                         width="450" height="450" style="border:0;" allowfullscreen="" loading="lazy"
@@ -271,9 +431,37 @@
             </div>
         </section>
 
+        <section class="reviews" id="reviews">
+            <div class="section-header">
+                <h2 class="section-title">O que nossos clientes dizem</h2>
+                <p class="section-sub">Confira alguns depoimentos reais de clientes que confiam na conhecenet para se manterem sempre conectados.</p>
+            </div>
+
+            <div class="reviews-slider">
+
+                <img src="/src/img/depoimentos/a2.png">
+                <img src="/src/img/depoimentos/a1.png">
+                <img src="/src/img/depoimentos/a3.png">
+                <img src="/src/img/depoimentos/a4.png">
+                <img src="/src/img/depoimentos/a6.png">
+                <img src="/src/img/depoimentos/a5.png">
+
+                <img src="/src/img/depoimentos/a2.png">
+                <img src="/src/img/depoimentos/a1.png">
+                <img src="/src/img/depoimentos/a3.png">
+                <img src="/src/img/depoimentos/a4.png">
+                <img src="/src/img/depoimentos/a6.png">
+                <img src="/src/img/depoimentos/a5.png">
+            </div>
+        </section>
+
         <section class="faq" id="faq">
-            <h2>Dúvidas Frequentes</h2>
-            <p>Veja as perguntas mais comuns sobre nossos serviços</p>
+
+            <div class="section-header">
+                <h2 class="section-title">Dúvidas Frequentes</h2>
+                <p class="section-sub">
+                    Veja as perguntas mais comuns sobre nossos serviços</p>
+            </div>
 
             <div class="faq-item">
                 <button class="faq-question">
@@ -320,6 +508,7 @@
 
     <script src="src/js/swiper-bundle.min.js"></script>
     <script src="/src/js/javascript.js"></script>
+    <script src="/src/js/contato.js"></script>
 
 </body>
 

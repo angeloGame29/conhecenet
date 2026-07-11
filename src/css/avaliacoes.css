@@ -1,0 +1,35 @@
+.reviews {
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.reviews-slider{
+    display:flex;
+    gap:20px;
+    max-width: max-content;
+    padding:20px;
+
+    animation: gira 20s linear infinite;
+}
+
+.reviews-slider img{
+    width:280px;
+    border-radius:16px;
+    flex:none;
+    scroll-snap-align:center;
+    border:2px solid #7EE000;
+}
+
+@keyframes gira {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+.reviews-slider:hover{
+    animation-play-state: paused;
+}

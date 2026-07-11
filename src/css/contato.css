@@ -1,0 +1,136 @@
+@import url(variaveis.css);
+
+.contato {
+    padding: 3rem 2rem;
+}
+
+.contact-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 64px;
+}
+
+.form-group {
+    margin-bottom: 10px;
+}
+
+.form-group label {
+    display: block;
+    font-size: .85rem;
+    font-weight: 600;
+    margin-bottom: 7px;
+    color: var(--cor-text-a);
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 13px 16px;
+    border: 2px solid var(--cor-secundaria);
+    border-radius: 10px;
+    font-size: .92rem;
+    background: var(--cor-primaria);
+    color: var(--cor-text-a);
+    outline: none;
+    transition: all .5s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #fff;
+    box-shadow: 0 0 0 2px rgb(101, 255, 96);
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+
+.contact-info {}
+
+.contact-info h3 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+    color: var(--cor-text-a);
+}
+
+.contact-info p {
+    color: var(--cor-text-a);
+    margin-bottom: 28px;
+    line-height: 1.6;
+}
+
+.contact-item {
+    display: flex;
+    gap: 14px;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.contact-item-icon {
+    width: 44px;
+    height: 44px;
+    border-radius: 10px;
+    background: var(--cor-secundaria);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--cor-text-a);
+    font-size: 1rem;
+    flex-shrink: 0;
+}
+
+.contact-item-text span {
+    display: block;
+    font-size: .75rem;
+    color: var(--cor-text-a);
+    margin-bottom: 2px;
+}
+
+.contact-item-text strong {
+    font-size: .92rem;
+    color: var(--cor-text-a);
+}
+
+.social-links {
+    display: flex;
+    gap: 10px;
+    margin-top: 28px;
+}
+
+.social-link {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+    color: #fff;
+    transition: transform .5s;
+}
+
+.social-link:hover {
+    transform: translateY(-3px) scale(1.1);
+}
+
+.social-whatsapp {
+    background: #25d366;
+}
+
+.social-instagram {
+    background: linear-gradient(135deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+}
+
+.social-facebook {
+    background: #1877f2;
+}

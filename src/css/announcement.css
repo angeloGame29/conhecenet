@@ -1,0 +1,53 @@
+@import url(variaveis.css);
+#announcement-bar {
+    background: var(--linear-gradient);
+    color:#fff ;
+    text-align: center;
+    font-size: .82rem;
+    font-weight: 600;
+    padding: 10px 24px;
+    position: relative;
+    overflow: hidden;
+}
+
+.announcement-slides {
+    display: flex;
+    gap: 80px;
+    animation: marquee 24s linear infinite;
+    white-space: nowrap;
+}
+
+.announcement-slides span::before {
+    content: "🔥 ";
+}
+
+@keyframes marquee {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+@media (max-width: 480px) {
+    #announcement-bar {
+        font-size: .70rem;
+        padding: 5px 12px;
+    }
+    .announcement-slides {
+        gap: 30px;
+        animation: marquee 21s linear infinite;
+    }
+
+    @keyframes marquee {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-600%);
+    }
+}
+}
